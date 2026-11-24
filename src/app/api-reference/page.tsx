@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function ApiReferencePage() {
   return (
     <>
-      <section className="pt-11 pb-4">
-        <div className="mx-auto w-full max-w-[1120px] px-6">
+      <section className="pt-12 pb-2">
+        <div className="mx-auto w-full max-w-[1020px] px-6">
           <p className="m-0 text-[11.5px] font-bold tracking-[0.1em] uppercase text-[#626952]">
             API SPECIFICATION &bull; HTTP://127.0.0.1:8765/V1
           </p>
@@ -31,8 +31,8 @@ export default function ApiReferencePage() {
       <LoopbackApiList />
       <TrustFlowAndErrors />
 
-      <section className="py-4 pb-8">
-        <div className="mx-auto w-full max-w-[1120px] px-6">
+      <section className="py-4 pb-10">
+        <div className="mx-auto w-full max-w-[1020px] px-6">
           <div className="rounded-[22px] border border-[#E2E5DA] bg-white p-6">
             <h2 className="m-0 mb-4 text-[12px] font-bold tracking-[0.1em] uppercase text-[#626952]">
               Key Runtime Constants &amp; Limits

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { EcosystemSpotlight } from "@/components/sections/EcosystemSpotlight";
 import { PrivacySafetyHub } from "@/components/sections/PrivacySafetyHub";
 
 export const metadata: Metadata = {
@@ -11,8 +10,8 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <section className="pt-11 pb-4">
-        <div className="mx-auto w-full max-w-[1120px] px-6">
+      <section className="pt-12 pb-2">
+        <div className="mx-auto w-full max-w-[1020px] px-6">
           <p className="m-0 text-[11.5px] font-bold tracking-[0.1em] uppercase text-[#626952]">
             GOOGLE PLAY CONSOLE COMPLIANCE &bull; ZERO TRACKING
           </p>
@@ -20,13 +19,12 @@ export default function PrivacyPage() {
             Privacy &amp; <span className="text-[#4F5D2F]">Data Safety Hub</span>
           </h1>
           <p className="m-0 max-w-2xl text-[15px] text-[#585E4F]">
-            100% On-Device • Zero Cloud • Zero Tracking. Inspect Play Console Data Safety matrices, minimal Android permissions, and user deletion controls across all three UOAI applications.
+            100% On-Device &bull; Zero Cloud &bull; Zero Tracking. Inspect Play Console Data Safety matrices, minimal Android permissions, and user deletion controls across all three UOAI applications.
           </p>
         </div>
       </section>
 
       <PrivacySafetyHub />
-      <EcosystemSpotlight />
     </>
   );
 }

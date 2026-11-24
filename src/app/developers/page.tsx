@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { DeveloperStudio } from "@/components/sections/DeveloperStudio";
-import { TrustFlowAndErrors } from "@/components/sections/TrustFlowAndErrors";
 
 export const metadata: Metadata = {
   title: "Developer Integration & AI Prompts",
@@ -19,8 +18,8 @@ export default async function DevelopersPage({
 
   return (
     <>
-      <section className="pt-11 pb-4">
-        <div className="mx-auto w-full max-w-[1120px] px-6">
+      <section className="pt-12 pb-2">
+        <div className="mx-auto w-full max-w-[1020px] px-6">
           <p className="m-0 text-[11.5px] font-bold tracking-[0.1em] uppercase text-[#626952]">
             EXTERNAL DEVELOPER HANDOVER &bull; COM.UOAI.PROVIDER
           </p>
@@ -34,7 +33,6 @@ export default async function DevelopersPage({
       </section>
 
       <DeveloperStudio initialTab={initialTab} />
-      <TrustFlowAndErrors />
     </>
   );
 }

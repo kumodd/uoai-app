@@ -3,10 +3,18 @@
 import { ShieldCheck } from "lucide-react";
 import { useState } from "react";
 import { CodePill, VerifiedBadge } from "@/components/ui/Badge";
+import { PlayStoreButton } from "@/components/ui/PlayStoreButton";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { OFFICIAL_URLS } from "@/data/constants";
 import { PRIVACY_APPS } from "@/data/privacy";
 import { cn } from "@/lib/cn";
 import type { EcosystemAppKey } from "@/types/uoai";
+
+const PLAY_URLS: Record<EcosystemAppKey, string> = {
+  provider: OFFICIAL_URLS.providerPlayStore,
+  chat: OFFICIAL_URLS.chatPlayStore,
+  keyboard: OFFICIAL_URLS.keyboardPlayStore,
+};
 
 export function PrivacySafetyHub() {
   const [selectedKey, setSelectedKey] = useState<EcosystemAppKey>("provider");
@@ -14,8 +22,8 @@ export function PrivacySafetyHub() {
     PRIVACY_APPS.find((item) => item.key === selectedKey) ?? PRIVACY_APPS[0];
 
   return (
-    <section className="py-7">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+    <section className="py-8">
+      <div className="mx-auto w-full max-w-[1020px] px-6">
         <SectionHeader
           eyebrow="PRIVACY & GOOGLE PLAY DATA SAFETY HUB"
           icon={<ShieldCheck className="h-3.5 w-3.5" />}
@@ -156,7 +164,11 @@ export function PrivacySafetyHub() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <div className="flex shrink-0 gap-2">
+            <div className="flex shrink-0 flex-wrap items-center gap-2">
+              <PlayStoreButton
+                href={PLAY_URLS[active.key]}
+                appName={active.label}
+              />
               <a
                 href={active.privacyUrl}
                 target="_blank"

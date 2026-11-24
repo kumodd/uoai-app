@@ -1,9 +1,7 @@
-import { AudienceBenefitsSection } from "@/components/sections/AudienceBenefitsSection";
+import { ExecutiveDetailsSection } from "@/components/sections/ExecutiveDetailsSection";
 import { HeroStudio } from "@/components/sections/HeroStudio";
 import { MarketingCtaSection } from "@/components/sections/MarketingCtaSection";
 import { PortfolioSection } from "@/components/sections/PortfolioSection";
-import { ScopeBoundariesSection } from "@/components/sections/ScopeBoundariesSection";
-import { StakeholdersSection } from "@/components/sections/StakeholdersSection";
 import { WhyNeededSection } from "@/components/sections/WhyNeededSection";
 
 export default function HomePage() {
@@ -11,10 +9,8 @@ export default function HomePage() {
     <>
       <HeroStudio />
       <WhyNeededSection />
-      <AudienceBenefitsSection />
       <PortfolioSection />
-      <StakeholdersSection />
-      <ScopeBoundariesSection />
+      <ExecutiveDetailsSection />
       <MarketingCtaSection />
     </>
   );

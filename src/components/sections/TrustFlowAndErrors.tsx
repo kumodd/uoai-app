@@ -21,7 +21,7 @@ export function TrustFlowAndErrors() {
 
   return (
     <section className="py-4 pb-8">
-      <div className="mx-auto grid w-full max-w-[1120px] grid-cols-1 gap-4 px-6 lg:grid-cols-[1fr_1.25fr]">
+      <div className="mx-auto grid w-full max-w-[1020px] grid-cols-1 gap-4 px-6 lg:grid-cols-[1fr_1.25fr]">
         {/* Connection & Trust Flow */}
         <article className="rounded-[22px] border border-[#E2E5DA] bg-white p-6">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">

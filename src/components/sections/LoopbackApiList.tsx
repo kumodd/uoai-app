@@ -18,8 +18,8 @@ export function LoopbackApiList() {
   };
 
   return (
-    <section className="py-7">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+    <section className="py-8">
+      <div className="mx-auto w-full max-w-[1020px] px-6">
         <SectionHeader
           eyebrow="LOOPBACK API • HTTP://127.0.0.1:8765/V1"
           icon={<FileText className="h-3.5 w-3.5" />}

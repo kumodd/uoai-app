@@ -48,7 +48,7 @@ export default async function BrdDocPage({
 
   return (
     <section className="py-10">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1020px] px-6">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
           <Link
             href="/docs"

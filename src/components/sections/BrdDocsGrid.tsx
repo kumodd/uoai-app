@@ -7,8 +7,8 @@ export async function BrdDocsGrid() {
   const docs = await getAllBrdDocs();
 
   return (
-    <section className="py-7">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+    <section className="py-8">
+      <div className="mx-auto w-full max-w-[1020px] px-6">
         <SectionHeader
           eyebrow="BUSINESS REQUIREMENTS DOCUMENTATION (BRD SUITE)"
           icon={<BookOpen className="h-3.5 w-3.5" />}

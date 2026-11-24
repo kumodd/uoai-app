@@ -29,8 +29,8 @@ export function DeveloperStudio({
   const [promptVariant, setPromptVariant] = useState<PromptVariant>("a");
 
   return (
-    <section className="py-7">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+    <section className="py-8">
+      <div className="mx-auto w-full max-w-[1020px] px-6">
         <SectionHeader
           eyebrow="DEVELOPER INTEGRATION STUDIO"
           icon={<Code2 className="h-3.5 w-3.5" />}

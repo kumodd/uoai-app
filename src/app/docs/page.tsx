@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function DocsIndexPage() {
   return (
     <>
-      <section className="pt-11 pb-4">
-        <div className="mx-auto w-full max-w-[1120px] px-6">
+      <section className="pt-12 pb-2">
+        <div className="mx-auto w-full max-w-[1020px] px-6">
           <p className="m-0 text-[11.5px] font-bold tracking-[0.1em] uppercase text-[#626952]">
             UOAI SPECIFICATION ARCHIVE &bull; DOCS/BRD
           </p>
